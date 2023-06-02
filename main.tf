@@ -1,6 +1,15 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
+#provider "aws" {
+ #  region = "ap-southeast-1"
+ # assume_role {
+  #  role_arn = "arn:aws:iam::235216519211:role/aws-service-role/support.amazonaws.com/AWSServiceRoleForSupport"
+   # session_name = "default"
+  #}
+  
+#}
+
 module "aft" {
   source = "github.com/aws-ia/terraform-aws-control_tower_account_factory"
   ct_management_account_id    = var.ct_management_account_id
